@@ -9,10 +9,17 @@
         <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-23.4.0_4aecacf8f8c235268ba7f86b597e50906ed2a40a.jar" />
     </item>
     <item
+        jar="C:\Users\yjlii\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_f2b7b35d1e9e08c3fa632aafa3606e1f40fc6db4.jar" />
+    </item>
+    <item
         jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="427998b33c2a14875027871ead551f1707cc7cbf">
+        sha1="50d2694babef4a6e62ace9bd900013baca67a4dd">
         <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\instant-run_758744018f406821e75d05e14b1a426961cb9818.jar" />
     </item>
     <item
@@ -23,25 +30,18 @@
         <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\internal_impl-23.4.0_979a8ec896b376eca7fce12ff1783a9f4159da65.jar" />
     </item>
     <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.13.2\jars\classes.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_e69fb5760533e22fc6985ebe068e598656e79041.jar" />
+        sha1="3322df7b184ab5c8e8341508431cb3fcf395d13f">
+        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.13.2_55edfb06563320b316fc234470e30ab66a2d45c1.jar" />
     </item>
     <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="62c2e126a4a596d852dd79e29546fa46462eacba">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2d4d4720165369b087a8c9f5642ea439a4e1e20c.jar" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_f40329d5d2e7e6cdaefb606616f34f802fd24f11.jar" />
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_2b8ed55a8206b25869f5ffc878beb5cee12367ba.jar" />
     </item>
     <item
         jar="C:\Users\yjlii\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
@@ -51,11 +51,46 @@
         <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\support-annotations-23.4.0_d2f28d94d3c85fa1cd27fac55f13029d93474829.jar" />
     </item>
     <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.4.0_2b8ed55a8206b25869f5ffc878beb5cee12367ba.jar" />
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-23.4.0_149cbc79301f94ec3b1354bdf4a793dc3b73e9d7.jar" />
+    </item>
+    <item
+        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.android.support-customtabs-23.4.0_0ac6a9ac31513439da4c2fd5b72987cc9c8991e9.jar" />
+    </item>
+    <item
+        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
+        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-23.4.0_e69fb5760533e22fc6985ebe068e598656e79041.jar" />
+    </item>
+    <item
+        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.4.0_f40329d5d2e7e6cdaefb606616f34f802fd24f11.jar" />
+    </item>
+    <item
+        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="f562c170ef245e10fd4209dbe3cbbcd67cc87bd1">
+        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\instant-run-bootstrap_2d4d4720165369b087a8c9f5642ea439a4e1e20c.jar" />
+    </item>
+    <item
+        jar="C:\Users\yjlii\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_9e1ad4976b47b1f9611f242d070be43aa9e9d40c.jar" />
     </item>
 
 </items>
