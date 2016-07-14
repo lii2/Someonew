@@ -7,13 +7,22 @@ import android.content.Intent;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
 import com.facebook.FacebookSdk;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 
 public class MainActivity extends AppCompatActivity {
     boolean status = false;
+    CallbackManager callbackManager;
 
 
     @Override
@@ -21,11 +30,35 @@ public class MainActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_main);
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        callbackManager = CallbackManager.Factory.create();
 
+        LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
+
+        loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
+            @Override
+            public void onSuccess(LoginResult loginResult) {
+                // Go to profile page
+                Intent intent = new Intent(this, InterestActivity.class);
+                startActivity(intent);
+            }
+
+            @Override
+            public void onCancel() {
+                // Do nothing
+            }
+
+            @Override
+            public void onError(FacebookException exception) {
+                // Think about later
+            }
+        });
+
+
+        setContentView(R.layout.activity_main);
     }
 
-    public void popup(View view){
+/*    public void popup(View view){
 
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -39,9 +72,7 @@ public class MainActivity extends AppCompatActivity {
             status = true;
         }
 
-
-
-    }
+    }*/
 
     public void goToInterest(View view){
         Intent intent = new Intent(this, InterestActivity.class);

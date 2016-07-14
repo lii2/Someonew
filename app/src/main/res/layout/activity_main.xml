@@ -6,7 +6,7 @@
     android:layout_height="fill_parent"
     android:background="@color/red"
     tools:context="com.example.yjlii.someonew.MainActivity"
-    android:onClick="popup">
+    >
 
 
     <ImageView
@@ -51,5 +51,16 @@
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_marginTop="200dp"
-        android:id="@+id/fragment_container"></RelativeLayout>
+        android:id="@+id/fragment_container">
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:text="  connect_with_facebook" />
+
+    </RelativeLayout>
+
 </RelativeLayout>
