@@ -1,17 +1,11 @@
 package com.example.yjlii.someonew;
 
-import android.app.ActionBar;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
-import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
@@ -38,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
         callbackManager = CallbackManager.Factory.create();
 
-        LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
+        final LoginButton loginButton = (LoginButton) findViewById(R.id.login_button);
 
         LoginManager.getInstance().registerCallback(callbackManager,
                 new FacebookCallback<LoginResult>() {
@@ -46,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onSuccess(LoginResult loginResult) {
                         // If login succeeds, the LoginResult parameter has the new AccessToken, and the most recently granted or declined permissions.
                         // Go to profiles
+                        goToProfile(loginButton);
                     }
 
                     @Override
@@ -70,8 +65,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void goToInterest(View view){
-        Intent intent = new Intent(this, InterestActivity.class);
+    public void goToProfile(View view){
+        Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
+
+    /*
+    public void popup(View view) {
+
+        FragmentManager fragmentManager = getFragmentManager();
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+
+        if (!status) {
+
+            FragmentOne f1 = new FragmentOne();
+            fragmentTransaction.add(R.id.fragment_container, f1);
+            fragmentTransaction.addToBackStack(null);
+            fragmentTransaction.commit();
+            status = true;
+        }else {
+
+        }
+        }
+        */
 }

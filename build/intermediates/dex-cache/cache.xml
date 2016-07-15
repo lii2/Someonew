@@ -26,14 +26,14 @@
         jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="584f38bfb5720f30091b8d3142a15969e0520e67">
+        sha1="ebc17be930881a404a129b299d844d533e4dc9f3">
         <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_06d190db58441cf5e0179b8814697f2684054eee\classes.dex" />
     </item>
     <item
         jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="2c275672ddd437e59c7990140fb8842b2aaac005">
+        sha1="d345906999f7f824baf9eb4cb995c16e0e663e3e">
         <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4c19264367b3fc03ab1b0d5fa1bf4bbbb78ffc9e\classes.dex" />
     </item>
     <item
