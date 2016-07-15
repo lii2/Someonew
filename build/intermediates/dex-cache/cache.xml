@@ -2,95 +2,95 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_4aecacf8f8c235268ba7f86b597e50906ed2a40a\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.14.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="7cb8f70e66bdc25ee66ab8351a4e7214b6517aa8">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.14.0_f07ea7788b7bfd88c3bf632bf1ab3485d3a21037\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_f2b7b35d1e9e08c3fa632aafa3606e1f40fc6db4\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="1b70e49bf7edd4d6330bf09a514528ac837350be">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_758744018f406821e75d05e14b1a426961cb9818\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_979a8ec896b376eca7fce12ff1783a9f4159da65\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_2b8ed55a8206b25869f5ffc878beb5cee12367ba\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_d2f28d94d3c85fa1cd27fac55f13029d93474829\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_149cbc79301f94ec3b1354bdf4a793dc3b73e9d7\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
-        jumboMode="true"
-        revision="24.0.0"
-        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-customtabs-23.4.0_0ac6a9ac31513439da4c2fd5b72987cc9c8991e9\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.4.0\jars\classes.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="de4db3785756bfb0915a9f59a9b3f2fea7407be4">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_e69fb5760533e22fc6985ebe068e598656e79041\classes.dex" />
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.4.0_907e87524408cc98f33a9838ffbda93e3e3b4dc4\classes.dex" />
     </item>
     <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.14.0\jars\classes.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_f40329d5d2e7e6cdaefb606616f34f802fd24f11\classes.dex" />
+        sha1="7cb8f70e66bdc25ee66ab8351a4e7214b6517aa8">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.facebook.android-facebook-android-sdk-4.14.0_6109435795620252e8c4773456d8b34115533e0f\classes.dex" />
     </item>
     <item
-        jar="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\libs\internal_impl-23.4.0.jar"
         jumboMode="true"
         revision="24.0.0"
-        sha1="4c19288dc60712b81e69986a43bad0d57cdda75d">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_2d4d4720165369b087a8c9f5642ea439a4e1e20c\classes.dex" />
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.4.0_ded16b5edfb88c681cc0ec8fb69541375aecd472\classes.dex" />
     </item>
     <item
-        jar="C:\Users\yjlii\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="584f38bfb5720f30091b8d3142a15969e0520e67">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_06d190db58441cf5e0179b8814697f2684054eee\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2c275672ddd437e59c7990140fb8842b2aaac005">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_4c19264367b3fc03ab1b0d5fa1bf4bbbb78ffc9e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Lii2\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
         jumboMode="true"
         revision="24.0.0"
         sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="C:\Users\yjlii\AndroidStudioProjects\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_9e1ad4976b47b1f9611f242d070be43aa9e9d40c\classes.dex" />
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-tasks-1.4.0_ec2208f02da615577ff5bcb7b933453bb331be7d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Lii2\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.4.0\support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.4.0_329fc705406b2052c27947354560058f3c1e273e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\exploded-aar\com.android.support\customtabs\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-customtabs-23.4.0_9446327d7cb9deb7adda3ad077ec4fd3d15edc59\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="d9ecde39b460470e655de6e47c05573d2d5a8bfb">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-23.4.0_df46ff7526087aff389f7363f53a9f1491eecc66\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.4.0_85e3d07ae67f966f2a1d4f9f4a8253d1bc910418\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Lii2\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\bolts-applinks-1.4.0_3c167635847717761747cb97baa55ec74e7ee380\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="548f06de403a9409f00554b3ee12a9fdea0e236c">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.4.0_37c922e2639d8902c8e0539703672413ee36d13a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c2c594cace5d83a3227b2b6e658ecbfd586d3ed9">
+        <dex dex="C:\Users\Lii2\Documents\GitHub\Someonew\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.4.0_5ede14a0ca5c4bb86cf8968ed9c4622550101498\classes.dex" />
     </item>
 
 </items>
