@@ -9,6 +9,9 @@ import java.util.List;
  */
 public class InterestManager {
 
+    //use peristent data?
+    private int[] userInterests = new int[5];
+
     private String[] INTEREST_ARRAY = new String[20];
     {
         INTEREST_ARRAY[0] = "1";
@@ -32,10 +35,6 @@ public class InterestManager {
         INTEREST_ARRAY[0] = "19";
         INTEREST_ARRAY[0] = "20";
     }
-
-    private ArrayList<String> UserInterests= new ArrayList<String>();
-
-
 
     public InterestManager() {
 

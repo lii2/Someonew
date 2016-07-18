@@ -1,13 +1,21 @@
 package com.example.yjlii.someonew;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.facebook.Profile;
+
+import java.net.URI;
+import java.net.URL;
 
 public class ProfileActivity extends AppCompatActivity {
 
@@ -19,14 +27,24 @@ public class ProfileActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_profile);
 
-        TextView FBID=(TextView)findViewById(R.id.FBID);
-        FBID.setText(currentUser.getFirstName() + " " + currentUser.getLastName());
+        try {
+            TextView FBname = (TextView) findViewById(R.id.FBname);
 
-        TextView FBname=(TextView)findViewById(R.id.FBname);
-        FBID.setText(currentUser.getId());
+            ImageView ProfilePic = (ImageView) findViewById(R.id.profileView);
 
-        ImageView ProfilePic = (ImageView) findViewById(R.id.profileView);
-        ProfilePic.setImageURI(currentUser.getProfilePictureUri(500, 500));
+
+
+            FBname.setText(currentUser.getFirstName() + " " + currentUser.getLastName());
+
+            // SetImageURI is used for content URIs that's specific to the Android operating system.
+            // Specifying a URI to an internet resource won't work and the image will not be displayed.
+            Glide.with(this).load(currentUser.getProfilePictureUri(500,500).toString()).into(ProfilePic);
+
+        }catch(NullPointerException e){
+            System.err.println("NullPointerException: " + e.getMessage());
+        }
+
+        setInterestBar(R.drawable.football, R.drawable.football, R.drawable.football, R.drawable.football, R.drawable.football);
 
 
     }
@@ -34,6 +52,45 @@ public class ProfileActivity extends AppCompatActivity {
     public void goToMain(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+    }
+
+    public void goToChooseInterests(View view){
+        Intent intent = new Intent(this, ChooseInterests.class);
+        startActivity(intent);
+    }
+
+    public void setInterestBar(int[] interest_array){
+        //takes resource id array, example R.drawable.football
+
+        ImageView interestlogo1 = (ImageView) findViewById(R.id.logoview1);
+        ImageView interestlogo2 = (ImageView) findViewById(R.id.logoview2);
+        ImageView interestlogo3 = (ImageView) findViewById(R.id.logoview3);
+        ImageView interestlogo4 = (ImageView) findViewById(R.id.logoview4);
+        ImageView interestlogo5 = (ImageView) findViewById(R.id.logoview5);
+
+        interestlogo1.setImageResource(interest_array[0]);
+        interestlogo2.setImageResource(interest_array[1]);
+        interestlogo3.setImageResource(interest_array[2]);
+        interestlogo4.setImageResource(interest_array[3]);
+        interestlogo5.setImageResource(interest_array[4]);
+
+    }
+
+    public void setInterestBar(int one, int two, int three, int four, int five){
+        //takes resource id, example R.drawable.football
+
+        ImageView interestlogo1 = (ImageView) findViewById(R.id.logoview1);
+        ImageView interestlogo2 = (ImageView) findViewById(R.id.logoview2);
+        ImageView interestlogo3 = (ImageView) findViewById(R.id.logoview3);
+        ImageView interestlogo4 = (ImageView) findViewById(R.id.logoview4);
+        ImageView interestlogo5 = (ImageView) findViewById(R.id.logoview5);
+
+        interestlogo1.setImageResource(one);
+        interestlogo2.setImageResource(two);
+        interestlogo3.setImageResource(three);
+        interestlogo4.setImageResource(four);
+        interestlogo5.setImageResource(five);
+
     }
 
 }

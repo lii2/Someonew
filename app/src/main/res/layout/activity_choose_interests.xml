@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.yjlii.someonew.ChooseInterests">
+
+    <com.google.android.flexbox.FlexboxLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/interestsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        app:flexWrap="wrap"
+        app:alignItems="stretch"
+        app:alignContent="stretch"
+        android:padding="3dip"
+        >
+
+        <ToggleButton
+            android:id="@+id/interestview1"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            app:layout_flexBasisPercent="45%"
+            android:layout_margin="3dip"
+            android:background="@drawable/football"
+            android:textOff="Football"
+            android:textOn="Football Picked"
+            />
+
+        <ToggleButton
+            android:id="@+id/interestview2"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            app:layout_flexBasisPercent="45%"
+            android:layout_margin="3dip"
+            android:background="@drawable/cars"
+            android:textOff="Cars"
+            android:textOn="Cars Picked"
+            />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+</LinearLayout>

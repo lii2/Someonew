@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     tools:context=".ProfileActivity"
     android:background="@color/grey"
-    android:onClick="goToMain">
+    >
 
     <ImageView
         android:layout_width="160dip"
@@ -29,16 +29,6 @@
         android:layout_alignRight="@+id/profileView"
         android:layout_alignEnd="@+id/profileView" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="FB ID"
-        android:id="@+id/FBID"
-        android:layout_below="@+id/FBname"
-        android:layout_alignRight="@+id/FBname"
-        android:layout_alignEnd="@+id/FBname" />
-
     <com.google.android.flexbox.FlexboxLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -51,48 +41,48 @@
         android:layout_alignParentStart="true"
         app:flexWrap="wrap"
         app:alignItems="stretch"
-        app:alignContent="stretch" >
+        app:alignContent="stretch"
+        android:padding="3dip"
+        android:onClick="goToChooseInterests">
 
-        <TextView
-            android:id="@+id/textview1"
-            android:layout_width="80dp"
-            android:layout_height="match_parent"
-            app:layout_flexBasisPercent="20%"
-            />
-
-        <TextView
+        <ImageView
             android:id="@+id/logoview1"
-            android:layout_width="120dp"
+            android:layout_width="80dip"
             android:layout_height="match_parent"
-            app:layout_flexBasisPercent="20%"
+            app:layout_flexBasisPercent="18%"
+            android:layout_margin="3dip"
             />
 
-        <TextView
+        <ImageView
             android:id="@+id/logoview2"
-            android:layout_width="120dp"
+            android:layout_width="80dip"
             android:layout_height="match_parent"
-            app:layout_flexBasisPercent="20%"
+            app:layout_flexBasisPercent="18%"
+            android:layout_margin="3dip"
             />
 
-        <TextView
+        <ImageView
             android:id="@+id/logoview3"
-            android:layout_width="120dp"
+            android:layout_width="80dip"
             android:layout_height="match_parent"
-            app:layout_flexBasisPercent="20%"
+            app:layout_flexBasisPercent="18%"
+            android:layout_margin="3dip"
             />
 
-        <TextView
+        <ImageView
             android:id="@+id/logoview4"
-            android:layout_width="120dp"
+            android:layout_width="80dip"
             android:layout_height="match_parent"
-            app:layout_flexBasisPercent="20%"
+            app:layout_flexBasisPercent="18%"
+            android:layout_margin="3dip"
             />
 
-        <TextView
+        <ImageView
             android:id="@+id/logoview5"
-            android:layout_width="120dp"
+            android:layout_width="80dip"
             android:layout_height="match_parent"
-            app:layout_flexBasisPercent="20%"
+            app:layout_flexBasisPercent="18%"
+            android:layout_margin="3dip"
             />
     </com.google.android.flexbox.FlexboxLayout>
 
@@ -106,5 +96,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginLeft="10dip"/>
+
 
 </RelativeLayout>
