@@ -1,10 +1,6 @@
 package com.example.yjlii.someonew;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.net.Uri;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -14,10 +10,10 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.facebook.Profile;
 
-import java.net.URI;
-import java.net.URL;
 
 public class ProfileActivity extends AppCompatActivity {
+
+    InterestManager interestManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,8 +28,6 @@ public class ProfileActivity extends AppCompatActivity {
 
             ImageView ProfilePic = (ImageView) findViewById(R.id.profileView);
 
-
-
             FBname.setText(currentUser.getFirstName() + " " + currentUser.getLastName());
 
             // SetImageURI is used for content URIs that's specific to the Android operating system.
@@ -44,8 +38,9 @@ public class ProfileActivity extends AppCompatActivity {
             System.err.println("NullPointerException: " + e.getMessage());
         }
 
-        setInterestBar(R.drawable.football, R.drawable.football, R.drawable.football, R.drawable.football, R.drawable.football);
+        interestManager = new InterestManager(this);
 
+        setInterestBar(R.drawable.football, R.drawable.football, R.drawable.football, R.drawable.football, R.drawable.football);
 
     }
 

@@ -1,7 +1,11 @@
 package com.example.yjlii.someonew;
 
 
+import android.content.Context;
+import android.content.res.Resources;
+
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -9,36 +13,32 @@ import java.util.List;
  */
 public class InterestManager {
 
-    //use peristent data?
-    private int[] userInterests = new int[5];
-
-    private String[] INTEREST_ARRAY = new String[20];
-    {
-        INTEREST_ARRAY[0] = "1";
-        INTEREST_ARRAY[0] = "2";
-        INTEREST_ARRAY[0] = "3";
-        INTEREST_ARRAY[0] = "4";
-        INTEREST_ARRAY[0] = "5";
-        INTEREST_ARRAY[0] = "6";
-        INTEREST_ARRAY[0] = "7";
-        INTEREST_ARRAY[0] = "8";
-        INTEREST_ARRAY[0] = "9";
-        INTEREST_ARRAY[0] = "10";
-        INTEREST_ARRAY[0] = "11";
-        INTEREST_ARRAY[0] = "12";
-        INTEREST_ARRAY[0] = "13";
-        INTEREST_ARRAY[0] = "14";
-        INTEREST_ARRAY[0] = "15";
-        INTEREST_ARRAY[0] = "16";
-        INTEREST_ARRAY[0] = "17";
-        INTEREST_ARRAY[0] = "18";
-        INTEREST_ARRAY[0] = "19";
-        INTEREST_ARRAY[0] = "20";
-    }
+    public HashSet<Interest> userInterests;
+    Resources resourcesHandler;
 
     public InterestManager() {
 
     }
 
+    public InterestManager(Context context) {
+        resourcesHandler = context.getResources();
+    }
+
+    public void addInterest(int ID) {
+        userInterests.add(new Interest(ID, resourcesHandler.getResourceName(ID)));
+    }
+
+    public void removeInterest(int ID) {
+        userInterests.remove(new Interest(ID, resourcesHandler.getResourceName(ID)));
+    }
+
+
+    public HashSet<Interest> getUserInterests() {
+        return userInterests;
+    }
+
+    public void setUserInterests(HashSet<Interest> userInterests) {
+        this.userInterests = userInterests;
+    }
 
 }

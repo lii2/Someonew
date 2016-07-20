@@ -37,7 +37,6 @@
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"/>
 
-
     <com.facebook.login.widget.LoginButton
         android:id="@+id/login_button"
         android:layout_width="wrap_content"
