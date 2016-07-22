@@ -5,32 +5,18 @@ package com.example.yjlii.someonew;
  */
 public class Interest {
 
-    private String name;
-    private int pictureID;
+    public String name;
+    public int pictureID;
 
     public Interest() {
     }
 
-    public Interest(int pictureID, String name) {
-        this.pictureID = pictureID;
+    public Interest(String name, int pictureID) {
+
         this.name = name;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getPictureID() {
-        return pictureID;
-    }
-
-    public void setPictureID(int pictureID) {
         this.pictureID = pictureID;
     }
+
 
     @Override
     public String toString() {

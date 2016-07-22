@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onSuccess(LoginResult loginResult) {
                         // If login succeeds, the LoginResult parameter has the new AccessToken, and the most recently granted or declined permissions.
                         // Go to profiles
-                        goToProfile(loginButton);
+                        goToProfile();
                     }
 
                     @Override
@@ -58,9 +58,7 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        if (Profile.getCurrentProfile() != null) {
-            goToProfile(loginButton);
-        }
+
     }
 
     @Override
@@ -69,28 +67,14 @@ public class MainActivity extends AppCompatActivity {
         callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 
+    public void goToProfile(){
+        Intent intent = new Intent(this, ProfileActivity.class);
+        startActivity(intent);
+    }
 
     public void goToProfile(View view){
         Intent intent = new Intent(this, ProfileActivity.class);
         startActivity(intent);
     }
 
-    /*
-    public void popup(View view) {
-
-        FragmentManager fragmentManager = getFragmentManager();
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-
-        if (!status) {
-
-            FragmentOne f1 = new FragmentOne();
-            fragmentTransaction.add(R.id.fragment_container, f1);
-            fragmentTransaction.addToBackStack(null);
-            fragmentTransaction.commit();
-            status = true;
-        }else {
-
-        }
-        }
-        */
 }

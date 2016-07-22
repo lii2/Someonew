@@ -8,12 +8,19 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.FacebookSdk;
 import com.facebook.Profile;
+import com.facebook.appevents.AppEventsLogger;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
+import com.facebook.login.widget.LoginButton;
 
 
 public class ProfileActivity extends AppCompatActivity {
 
-    InterestManager interestManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,13 +45,16 @@ public class ProfileActivity extends AppCompatActivity {
             System.err.println("NullPointerException: " + e.getMessage());
         }
 
-        interestManager = new InterestManager(this);
-
-        setInterestBar(R.drawable.football, R.drawable.football, R.drawable.football, R.drawable.football, R.drawable.football);
+        setInterestBar(R.drawable.placeholderlogo, R.drawable.placeholderlogo, R.drawable.placeholderlogo, R.drawable.placeholderlogo, R.drawable.placeholderlogo);
 
     }
 
-    public void goToMain(View view){
+    public void goToMain (){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void goToMain (View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }

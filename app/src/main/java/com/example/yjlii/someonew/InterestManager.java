@@ -2,6 +2,7 @@ package com.example.yjlii.someonew;
 
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 
 import java.util.ArrayList;
@@ -13,23 +14,27 @@ import java.util.List;
  */
 public class InterestManager {
 
+    public HashSet<Interest> allInterests;
     public HashSet<Interest> userInterests;
-    Resources resourcesHandler;
 
     public InterestManager() {
 
+        userInterests = new HashSet<Interest>();
+        allInterests = new HashSet<Interest>();
+        fillAllInterests();
+
     }
 
-    public InterestManager(Context context) {
-        resourcesHandler = context.getResources();
+    public void addInterest(Interest interest) {
+
+        userInterests.add(interest);
+
     }
 
-    public void addInterest(int ID) {
-        userInterests.add(new Interest(ID, resourcesHandler.getResourceName(ID)));
-    }
+    public void removeInterest(Interest interest) {
 
-    public void removeInterest(int ID) {
-        userInterests.remove(new Interest(ID, resourcesHandler.getResourceName(ID)));
+        userInterests.remove(interest);
+
     }
 
 
@@ -37,8 +42,36 @@ public class InterestManager {
         return userInterests;
     }
 
+
     public void setUserInterests(HashSet<Interest> userInterests) {
+
         this.userInterests = userInterests;
+
     }
+
+    public void fillAllInterests() {
+
+        allInterests.add(new Interest("cars", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("comics", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("rnb", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("blah", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("fashion", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("skiing", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("country", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("politics", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("football", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("videogames", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("partystories", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("travel", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("got", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("fitness", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("soccer", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("movies", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("rock", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("currentevents", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("technology", R.drawable.placeholderlogo));
+        allInterests.add(new Interest("edm", R.drawable.placeholderlogo));
+    }
+
 
 }
