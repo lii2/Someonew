@@ -45,45 +45,6 @@
         android:padding="3dip"
         android:onClick="goToChooseInterests">
 
-        <ImageView
-            android:id="@+id/logoview1"
-            android:layout_width="80dip"
-            android:layout_height="match_parent"
-            app:layout_flexBasisPercent="18%"
-            android:layout_margin="3dip"
-            />
-
-        <ImageView
-            android:id="@+id/logoview2"
-            android:layout_width="80dip"
-            android:layout_height="match_parent"
-            app:layout_flexBasisPercent="18%"
-            android:layout_margin="3dip"
-            />
-
-        <ImageView
-            android:id="@+id/logoview3"
-            android:layout_width="80dip"
-            android:layout_height="match_parent"
-            app:layout_flexBasisPercent="18%"
-            android:layout_margin="3dip"
-            />
-
-        <ImageView
-            android:id="@+id/logoview4"
-            android:layout_width="80dip"
-            android:layout_height="match_parent"
-            app:layout_flexBasisPercent="18%"
-            android:layout_margin="3dip"
-            />
-
-        <ImageView
-            android:id="@+id/logoview5"
-            android:layout_width="80dip"
-            android:layout_height="match_parent"
-            app:layout_flexBasisPercent="18%"
-            android:layout_margin="3dip"
-            />
     </com.google.android.flexbox.FlexboxLayout>
 
     <TextView

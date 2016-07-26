@@ -7,6 +7,7 @@ import android.content.res.Resources;
 
 import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -49,6 +50,34 @@ public class InterestManager {
 
     }
 
+    public String[] getUserInterestNames() {
+        String[] temp = new String[5];
+
+        int index = 0;
+
+        for (Interest interest :
+                userInterests) {
+            temp[index] = interest.name;
+            index++;
+        }
+
+        return temp;
+    }
+
+    public int[] getUserInterestPics() {
+        int[] temp = new int[5];
+
+        int index = 0;
+
+        for (Interest interest :
+                userInterests) {
+            temp[index] = interest.pictureID;
+            index++;
+        }
+
+        return temp;
+    }
+
     public void fillAllInterests() {
 
         allInterests.add(new Interest("cars", R.drawable.placeholderlogo));
@@ -72,6 +101,7 @@ public class InterestManager {
         allInterests.add(new Interest("technology", R.drawable.placeholderlogo));
         allInterests.add(new Interest("edm", R.drawable.placeholderlogo));
     }
+
 
 
 }

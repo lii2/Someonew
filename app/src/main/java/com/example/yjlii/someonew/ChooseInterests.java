@@ -20,12 +20,15 @@ public class ChooseInterests extends AppCompatActivity {
 
     InterestManager interestManager;
 
+    SharedPreferences prefs;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         interestManager = new InterestManager();
+
+        prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
 
         setContentView(R.layout.activity_choose_interests);
 
@@ -49,12 +52,9 @@ public class ChooseInterests extends AppCompatActivity {
     public void addInterest(Interest interest) {
         interestManager.userInterests.add(interest);
 
-        if (interestManager.userInterests.size() > 4) {
-            /*SharedPreferences sharedPref = getPreferences(Context.MODE_PRIVATE);
-            SharedPreferences.Editor editor = sharedPref.edit();
-            editor.putString(interest.name, "figure this out");
-            editor.commit();*/
+        if (interestManager.userInterests.size() >4 ) {
 
+            commit();
             goToProfile();
         }
     }
@@ -77,5 +77,32 @@ public class ChooseInterests extends AppCompatActivity {
         });
 
         return button;
+    }
+
+
+
+    public void commit() {
+
+        String[] names = interestManager.getUserInterestNames();
+        int[] pics = interestManager.getUserInterestPics();
+
+        //commmits to internal memory
+        SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = prefs.edit();
+
+        editor.putString("interest_one_name", names[0]);
+        editor.putString("interest_two_name", names[1]);
+        editor.putString("interest_two_name", names[2]);
+        editor.putString("interest_three_name", names[3]);
+        editor.putString("interest_four_name", names[4]);
+
+        editor.putInt("interest_one_pic", pics[0]);
+        editor.putInt("interest_two_pic", pics[1]);
+        editor.putInt("interest_three_pic", pics[2]);
+        editor.putInt("interest_four_pic", pics[3]);
+        editor.putInt("interest_five_pic", pics[4]);
+
+        editor.commit();
+
     }
 }

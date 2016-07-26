@@ -1,9 +1,12 @@
 package com.example.yjlii.someonew;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,18 +20,23 @@ import com.facebook.appevents.AppEventsLogger;
 import com.facebook.login.LoginManager;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.google.android.flexbox.FlexboxLayout;
+
+import java.util.HashSet;
 
 
 public class ProfileActivity extends AppCompatActivity {
 
+    InterestManager interestManager;
+    Profile currentUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        Profile currentUser = Profile.getCurrentProfile();
+        interestManager = new InterestManager();
 
-        setContentView(R.layout.activity_profile);
+        currentUser = Profile.getCurrentProfile();
 
         try {
             TextView FBname = (TextView) findViewById(R.id.FBname);
@@ -45,7 +53,15 @@ public class ProfileActivity extends AppCompatActivity {
             System.err.println("NullPointerException: " + e.getMessage());
         }
 
-        setInterestBar(R.drawable.placeholderlogo, R.drawable.placeholderlogo, R.drawable.placeholderlogo, R.drawable.placeholderlogo, R.drawable.placeholderlogo);
+        setContentView(R.layout.activity_profile);
+
+        retrieveOrChoose();
+
+        FlexboxLayout interestsContainer = (FlexboxLayout) findViewById(R.id.interestsContainer);
+
+        for (Interest interest : interestManager.allInterests) {
+            interestsContainer.addView(createInterest(interest));
+        }
 
     }
 
@@ -53,6 +69,7 @@ public class ProfileActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
+
 
     public void goToMain (View view){
         Intent intent = new Intent(this, MainActivity.class);
@@ -64,38 +81,53 @@ public class ProfileActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-    public void setInterestBar(int[] interest_array){
-        //takes resource id array, example R.drawable.football
-
-        ImageView interestlogo1 = (ImageView) findViewById(R.id.logoview1);
-        ImageView interestlogo2 = (ImageView) findViewById(R.id.logoview2);
-        ImageView interestlogo3 = (ImageView) findViewById(R.id.logoview3);
-        ImageView interestlogo4 = (ImageView) findViewById(R.id.logoview4);
-        ImageView interestlogo5 = (ImageView) findViewById(R.id.logoview5);
-
-        interestlogo1.setImageResource(interest_array[0]);
-        interestlogo2.setImageResource(interest_array[1]);
-        interestlogo3.setImageResource(interest_array[2]);
-        interestlogo4.setImageResource(interest_array[3]);
-        interestlogo5.setImageResource(interest_array[4]);
-
+    public void goToChooseInterests(){
+        Intent intent = new Intent(this, ChooseInterests.class);
+        startActivity(intent);
     }
 
-    public void setInterestBar(int one, int two, int three, int four, int five){
-        //takes resource id, example R.drawable.football
 
-        ImageView interestlogo1 = (ImageView) findViewById(R.id.logoview1);
-        ImageView interestlogo2 = (ImageView) findViewById(R.id.logoview2);
-        ImageView interestlogo3 = (ImageView) findViewById(R.id.logoview3);
-        ImageView interestlogo4 = (ImageView) findViewById(R.id.logoview4);
-        ImageView interestlogo5 = (ImageView) findViewById(R.id.logoview5);
+    public void retrieveOrChoose() {
+        String[] names = new String[5];
+        int[] pics = new int[5];
 
-        interestlogo1.setImageResource(one);
-        interestlogo2.setImageResource(two);
-        interestlogo3.setImageResource(three);
-        interestlogo4.setImageResource(four);
-        interestlogo5.setImageResource(five);
+        SharedPreferences prefs = this.getSharedPreferences("myPrefsKey", Context.MODE_PRIVATE);
 
+        names[0] = prefs.getString("interest_one_name", "default");
+        names[1] = prefs.getString("interest_two_name", "default");
+        names[2] = prefs.getString("interest_three_name", "default");
+        names[3] = prefs.getString("interest_four_name", "default");
+        names[4] = prefs.getString("interest_five_name", "default");
+
+        pics[0] = prefs.getInt("interest_one_pic", 0);
+        pics[1] = prefs.getInt("interest_two_pic", 0);
+        pics[2] = prefs.getInt("interest_three_pic", 0);
+        pics[3] = prefs.getInt("interest_four_pic", 0);
+        pics[4] = prefs.getInt("interest_five_pic", 0);
+
+
+        if (names[0] == "default") {
+            goToChooseInterests();
+        }else{
+
+            HashSet<Interest> userInterests = new HashSet<Interest>();
+            for(int i = 0; i<5; i++) {
+
+                userInterests.add(new Interest(names[i], pics[i]));
+
+            }
+
+            interestManager.setUserInterests(userInterests);
+
+        }
+    }
+
+    private ImageView createInterest(Interest interest) {
+
+        ImageView image = new ImageView(this);
+        image.setBackgroundResource(interest.pictureID);
+
+        return image;
     }
 
 }
